@@ -5,6 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 //declare variables for routes
 const htmlRoutes = require('./routes/htmlRoutes');
+const notes = require('./db/db.json');
 
 //middleware to connect stylesheets
 app.use(express.static('public'));
