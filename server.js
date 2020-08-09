@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 //declare port
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 //declare variables for routes
 const htmlRoutes = require('./routes/htmlRoutes');
 const apiRoutes = require('./routes/apiRoutes');
@@ -16,7 +16,7 @@ app.use(express.json());
 
 //get routes
 app.use('/', htmlRoutes);
-app.use('/', apiRoutes);
+app.use('/api', apiRoutes);
 
 //middleware to connect stylesheets
 app.use(express.static('public'));
