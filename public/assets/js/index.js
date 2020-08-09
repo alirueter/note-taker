@@ -8,7 +8,7 @@ var $noteList = $(".list-container .list-group");
 var activeNote = {};
 
 // A function for getting all notes from the db
-var getNotes = function() {
+var getNotes = function(formData = {}) {
   return $.ajax({
     url: "/api/notes",
     method: "GET"
