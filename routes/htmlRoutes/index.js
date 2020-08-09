@@ -6,7 +6,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/', (req, res) => {
-    res.send(path.join(__dirname, '../../public/notes.html'));
+    res.sendFile(path.join(__dirname, '../../public/notes.html'));
 });
 
 module.exports = router;

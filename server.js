@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3001;
 //declare variables for routes
 const htmlRoutes = require('./routes/htmlRoutes');
 const apiRoutes = require('./routes/apiRoutes');
-const notes = require('./db/db.json');
+const notes = require('./db/notes.json');
 
 
 //parse incoming string or array data
