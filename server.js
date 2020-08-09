@@ -5,10 +5,10 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 //declare variables for routes
 const htmlRoutes = require('./routes/htmlRoutes');
+const apiRoutes = require('./routes/apiRoutes');
 const notes = require('./db/db.json');
 
-//middleware to connect stylesheets
-app.use(express.static('public'));
+
 //parse incoming string or array data
 app.use(express.urlencoded({extended: true}));
 //parse incoming JSON data
@@ -16,7 +16,10 @@ app.use(express.json());
 
 //get routes
 app.use('/', htmlRoutes);
+app.use('/', apiRoutes);
 
+//middleware to connect stylesheets
+app.use(express.static('public'));
 
 //keep at end of file
 app.listen(PORT, () => {
