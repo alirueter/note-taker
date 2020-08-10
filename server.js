@@ -2,11 +2,10 @@
 const express = require('express');
 const app = express();
 //declare port
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3003;
 //declare variables for routes
 const htmlRoutes = require('./routes/htmlRoutes');
 const apiRoutes = require('./routes/apiRoutes');
-const notes = require('./db/notes.json');
 
 
 //parse incoming string or array data
