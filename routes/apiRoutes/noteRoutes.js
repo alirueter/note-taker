@@ -21,9 +21,8 @@ router.post('/notes', (req,res) => {
     console.log("---- Hit route '/api/notes' on the server! Here the request body: ", req.body);
     
     req.body.id = notes.length + 1;
-    const newNotes = createNewNote(req.body, notes);
+    const newNotes = createNewNote(req.body);
     res.json(newNotes);
-    res.send("Hit route '/api/notes' on the server! ");
 });
 
 module.exports = router;
