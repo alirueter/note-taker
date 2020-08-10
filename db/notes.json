@@ -1,19 +1,14 @@
 {
   "notes_db": [
     {
-      "title": "Title Test",
-      "text": "Text Test",
-      "id": "1"
+      "title": "Test",
+      "text": "123",
+      "id": 1
     },
     {
-      "title": "title",
-      "text": "title",
+      "title": "Testing ",
+      "text": "again",
       "id": 2
-    },
-    {
-      "title": "title",
-      "text": "title",
-      "id": 3
     }
   ]
 }

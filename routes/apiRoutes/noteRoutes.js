@@ -4,7 +4,8 @@ const router = require('express').Router();
 
 router.get('/notes', (req, res) => {
     let results = notes;
-    res.json(results);
+    console.log("Results: "+JSON.stringify(results));
+    res.json(results.notes_db);
 });
 
 router.get('/notes/:id', (req, res) => {
