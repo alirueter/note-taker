@@ -21,7 +21,7 @@ router.post('/notes', (req,res) => {
    // console.log("---- Hit route '/api/notes' on the server! Here the request body: ", req.body);
     
     req.body.id = notes['notes_db'].length + 1;
-    const newNotes = createNewNote(req.body);
+    const newNotes = createNewNote(req.body, notes);
     res.json(newNotes);
 });
 
