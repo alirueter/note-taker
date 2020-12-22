@@ -5,7 +5,7 @@ For people that need to keep track of a lot of information, it's easy to forget 
 The application frontend was already created. The backend was built and connected the two and then deployed the entire application to Heroku.
 
 ## Heroku Link
-https://cryptic-mesa-12158.herokuapp.com/
+https://note-taker-0a.herokuapp.com/
 
 ## Screenshots
 ![Screenshot](/images/initial.png)
